@@ -5,10 +5,10 @@ const accountsRoute = require("./routes/accounts/accountsRoute");
 const transactionsRoute = require("./routes/transactions/transactionsRoute");
 const globalErrorHandler = require("./middlewares/globalErrorHandler");
 const cors = require("cors");
+app.use(cors());
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 require("./config/dbConnect");
 
 //middlewares
