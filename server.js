@@ -4,10 +4,10 @@ const usersRoute = require("./routes/users/usersRoute");
 const accountsRoute = require("./routes/accounts/accountsRoute");
 const transactionsRoute = require("./routes/transactions/transactionsRoute");
 const globalErrorHandler = require("./middlewares/globalErrorHandler");
+const app = express();
 const cors = require("cors");
 app.use(cors());
 
-const app = express();
 app.use(express.json());
 require("./config/dbConnect");
 

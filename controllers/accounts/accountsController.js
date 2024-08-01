@@ -87,7 +87,7 @@ const updateAccountController = async (req, res, next) => {
     });
   } catch (error) {
     return next(appError(error.message, 500));
-  }
+  }  
 };
 
 module.exports = {
